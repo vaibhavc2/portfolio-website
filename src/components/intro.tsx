@@ -3,11 +3,11 @@
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
+import BlurImage from "./blur-image";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -19,7 +19,7 @@ export default function Intro() {
       id="home"
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center scale-150 mb-24 mt-10">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
@@ -28,10 +28,11 @@ export default function Intro() {
               type: "tween",
               duration: 0.2,
             }}
+            className=""
           >
-            <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100"
-              alt="Ricardo portrait"
+            <BlurImage
+              src="https://github.com/vaibhavc2.png"
+              alt="Vaibhav Chopra: Full-stack developer"
               width="192"
               height="192"
               quality="95"
@@ -57,15 +58,15 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I am Vaibhav.</span> I am a{" "}
+        <span className="font-bold">Hello, I am Vaibhav Chopra.</span> I am a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
         <span className="font-bold">8 years</span> of experience. I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="underline">MERN stack: React.js, Next.js, Express & MongoDB</span>.
       </motion.h1>
 
       <motion.div
