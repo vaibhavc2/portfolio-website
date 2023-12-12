@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "../../public/corpcomment.png";
-import rmtdevImg from "../../public/rmtdev.png";
-import wordanalyticsImg from "../../public/wordanalytics.png";
+import rssbProject from "/public/corpcomment.png";
+import movixProject from "/public/rmtdev.png";
+import youtubeProject from "/public/wordanalytics.png";
 
 export const links = [
   {
@@ -62,25 +62,25 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "RSSB App.",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "I worked as a Freelancer on this project for 6 months. It's a web app for a religious organization called RSSB.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    imageUrl: rssbProject,
   },
   {
-    title: "rmtDev",
+    title: "Movix",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "A public web app for exploring movies and tv shows. It shows ratings, reviews, trailers, genres and more. User can search, filter and sort movies and tv shows.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    imageUrl: movixProject,
   },
   {
-    title: "Word Analytics",
+    title: "Youtube Full Stack",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: youtubeProject,
   },
 ] as const;
 
@@ -94,14 +94,12 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
+  "Sass",
   "Prisma",
   "MongoDB",
   "Redux",
   "GraphQL",
-  "Apollo",
   "Express",
   "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
 ] as const;
