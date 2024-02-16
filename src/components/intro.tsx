@@ -17,9 +17,9 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[50rem] scroll-mt-[100rem] text-center sm:mb-0"
     >
-      <div className="flex items-center justify-center scale-150 mb-24 mt-10">
+      <div className="mb-24 mt-10 flex scale-150 items-center justify-center">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
@@ -32,12 +32,12 @@ export default function Intro() {
           >
             <BlurImage
               src="https://github.com/vaibhavc2.png"
-              alt="Vaibhav Chopra: Full-stack developer"
+              alt="Vaibhav Chopra: Full-stack Web Developer"
               width="192"
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-24 w-24 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
             />
           </motion.div>
 
@@ -62,15 +62,27 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I am Vaibhav Chopra.</span> I am a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">8 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">MERN stack: React.js, Next.js, Express & MongoDB</span>.
+        {/* <span className="mb-4 block">
+          Hi, I'm <span className="font-semibold">Vaibhav Chopra</span>
+        </span>
+        <span className="mb-4 block">Full-stack Web Developer</span>
+        <span className="mb-4 block">
+          Passionate about creating web experiences
+        </span>
+        <span className="mb-4 block">
+          Currently looking for new opportunities
+        </span>
+        <span className="mb-4 block">Let's work together!</span> */}
+
+        <span className="text-xl">
+          Hey there! I'm Vaibhav, a passionate web developer. I love creating
+          engaging web experiences that blend creativity with functionality. I'm
+          currently looking for new opportunities. Let's work together!
+        </span>
       </motion.h1>
 
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -79,27 +91,27 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-none transition hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
           }}
         >
           Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          className="borderBlack group flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10"
           href="/CV.pdf"
           download
         >
           Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
           href="https://linkedin.com"
           target="_blank"
         >
@@ -107,7 +119,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-[1.35rem] text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
           href="https://github.com"
           target="_blank"
         >

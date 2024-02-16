@@ -33,6 +33,29 @@ export const links = [
   },
 ] as const;
 
+export const personalData = {
+  name: "Vaibhav Chopra",
+  title: "Full-Stack Developer",
+  greeting: "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਜੀ! 🦅🙏",
+  description:
+    "I'm a full-stack developer based in Houston, TX. I have experience working with React, Next.js, TypeScript, Tailwind, Prisma and MongoDB.",
+  imageUrl: "",
+  socials: [
+    {
+      name: "Github",
+      url: "",
+    },
+    {
+      name: "LinkedIn",
+      url: "",
+    },
+    {
+      name: "Email",
+      url: "",
+    },
+  ],
+} as const;
+
 export const experiencesData = [
   {
     title: "Graduated bootcamp",
