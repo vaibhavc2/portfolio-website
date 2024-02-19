@@ -89,7 +89,7 @@ export default function Intro() {
           </div>
           <div>
             <span>
-              I'm{" "}
+              I&apos;m{" "}
               <b>
                 {personalData.name.english}
                 <span className="hidden sm:inline">
@@ -109,7 +109,7 @@ export default function Intro() {
         </div>
 
         <div>
-          <span className="text-lg sm:text-xl">Let's work together!</span>
+          <span className="text-lg sm:text-xl">Let&apos;s work together!</span>
         </div>
       </motion.h1>
 

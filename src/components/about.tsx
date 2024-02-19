@@ -19,7 +19,7 @@ export default function About() {
       <SectionHeading>About me</SectionHeading>
       <div className="w-[20rem] sm:w-auto">
         <div className="mb-8 mt-10 text-xl">
-          <u>Crafting Digital Experiences: A Web Developer's Journey</u>
+          <u>Crafting Digital Experiences: A Web Developer&apos;s Journey</u>
         </div>
         <p className="text-gray-700 dark:text-white/80">
           Driven by a passion for code and creativity, I am a dedicated web

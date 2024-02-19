@@ -38,6 +38,8 @@ export const personalData = {
     english: "Vaibhav Chopra",
     panjabi: "ਵੈਭਵ ਚੋਪੜਾ",
   },
+  firstName: "Vaibhav",
+  lastName: "Chopra",
   title: "Full-Stack Web Developer",
   greeting: {
     panjabi: "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਜੀ! 🦅🙏",
