@@ -34,27 +34,40 @@ export const links = [
 ] as const;
 
 export const personalData = {
-  name: "Vaibhav Chopra",
-  title: "Full-Stack Developer",
-  greeting: "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਜੀ! 🦅🙏",
-  description:
-    "I'm a full-stack developer based in Houston, TX. I have experience working with React, Next.js, TypeScript, Tailwind, Prisma and MongoDB.",
-  imageUrl: "",
+  name: {
+    english: "Vaibhav Chopra",
+    panjabi: "ਵੈਭਵ ਚੋਪੜਾ",
+  },
+  title: "Full-Stack Web Developer",
+  greeting: {
+    panjabi: "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਜੀ! 🦅🙏",
+    english: "Hey there! 👋😀",
+  },
+  location: "Panjab, India",
+  description: "",
+  avatarUrl: "https://avatars.githubusercontent.com/u/73025956?v=4",
+  cvUrl: "/cv.pdf",
+  email: "vaibhavchopra72@gmail.com",
+  github: "https://github.com/vaibhavc2",
+  linkedin: "https://www.linkedin.com/in/vc72/",
   socials: [
     {
       name: "Github",
-      url: "",
+      url: "https://github.com/vaibhavc2",
     },
     {
       name: "LinkedIn",
-      url: "",
-    },
-    {
-      name: "Email",
-      url: "",
+      url: "https://www.linkedin.com/in/vc72/",
     },
   ],
 } as const;
+
+export const dynamicStrings = [
+  "am a passionate Web Developer",
+  "craft enganging Web Experiences",
+  "love to solve intricate coding problems",
+  "am currently seeking fresh opportunities",
+] as const;
 
 export const experiencesData = [
   {
@@ -110,21 +123,19 @@ export const projectsData = [
 export const skillsData = [
   "HTML",
   "CSS",
+  "Git",
   "JavaScript",
   "TypeScript",
   "React",
+  "Redux",
   "Next.js",
   "Node.js",
-  "Git",
+  "Express",
   "Tailwind",
   "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
   "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "AWS",
+  "Docker",
+  "Figma",
 ] as const;

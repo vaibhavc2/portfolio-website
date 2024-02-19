@@ -17,32 +17,19 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
-
-      <p>
-        <span className="italic">When I am not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I am also
-        learning how to play the guitar.
-      </p>
+      <div className="w-[20rem] sm:w-auto">
+        <div className="mb-8 mt-10 text-xl">
+          <u>Crafting Digital Experiences: A Web Developer's Journey</u>
+        </div>
+        <p className="text-gray-700 dark:text-white/80">
+          Driven by a passion for code and creativity, I am a dedicated web
+          developer committed to bringing ideas to life through elegant and
+          efficient digital solutions. With expertise in front-end and back-end
+          technologies, I thrive on challenges and continuously strive to push
+          the boundaries of innovation in web development. I love to lead the
+          teams through the challenges and help them to achieve their goals.
+        </p>
+      </div>
     </motion.section>
   );
 }
