@@ -3,6 +3,7 @@ import Header from "@/components/header";
 import ThemeSwitch from "@/components/theme-switch";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import ThemeContextProvider from "@/context/theme-context";
+import { personalData } from "@/lib/data";
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
@@ -10,8 +11,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Vaibhav | Personal Portfolio",
-  description: "Ricardo is a full-stack developer with 8 years of experience.",
+  title: `${personalData.firstName} | Personal Portfolio`,
+  description: `${personalData.firstName} is a full-stack MERN Web Developer`,
 };
 
 export default function RootLayout({

@@ -20,7 +20,7 @@ export default function BlurImage({
     <Image
       alt={alt}
       src={src}
-      quality={quality || 95}
+      quality={quality}
       layout={layout}
       priority={priority}
       width={width}

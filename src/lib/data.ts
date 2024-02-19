@@ -33,6 +33,44 @@ export const links = [
   },
 ] as const;
 
+export const personalData = {
+  name: {
+    english: "Vaibhav Chopra",
+    panjabi: "ਵੈਭਵ ਚੋਪੜਾ",
+  },
+  firstName: "Vaibhav",
+  lastName: "Chopra",
+  title: "Full-Stack Web Developer",
+  greeting: {
+    panjabi: "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਜੀ! 🦅🙏",
+    english: "Hey there! 👋😀",
+  },
+  location: "Panjab, India",
+  description: "",
+  avatarUrl: "https://avatars.githubusercontent.com/u/73025956?v=4",
+  cvUrl: "/cv.pdf",
+  email: "vaibhavchopra72@gmail.com",
+  github: "https://github.com/vaibhavc2",
+  linkedin: "https://www.linkedin.com/in/vc72/",
+  socials: [
+    {
+      name: "Github",
+      url: "https://github.com/vaibhavc2",
+    },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/vc72/",
+    },
+  ],
+} as const;
+
+export const dynamicStrings = [
+  "am a passionate Web Developer",
+  "craft enganging Web Experiences",
+  "love to solve intricate coding problems",
+  "am currently seeking fresh opportunities",
+] as const;
+
 export const experiencesData = [
   {
     title: "Graduated bootcamp",
@@ -87,19 +125,20 @@ export const projectsData = [
 export const skillsData = [
   "HTML",
   "CSS",
+  "Git",
   "JavaScript",
   "TypeScript",
   "React",
+  "Redux",
   "Next.js",
   "Node.js",
-  "Git",
+  "Express",
   "Tailwind",
   "Sass",
   "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Express",
   "PostgreSQL",
-  "Framer Motion",
+  "AWS",
+  "Docker",
+  "Figma",
 ] as const;
