@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import rssbProject from "/public/corpcomment.png";
+import regProject from "/public/corpcomment.png";
 import movixProject from "/public/rmtdev.png";
 import youtubeProject from "/public/wordanalytics.png";
 
@@ -96,15 +96,29 @@ export const experiencesData = [
     icon: React.createElement(FaReact),
     date: "2021 - present",
   },
-] as const;
+] as const; // title, location, description, icon, date
 
 export const projectsData = [
   {
-    title: "RSSB App.",
+    title: "Reg Project",
     description:
-      "I worked as a Freelancer on this project for 6 months. It's a web app for a religious organization called RSSB.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: rssbProject,
+      "I worked as a Freelancer on this project for 6 months. It's a web app for managing persons entries with a complete login system.",
+    tags: ["Node.js", "Express", "SQL", "Next.js", "Drizzle"],
+    imageUrl: regProject,
+  },
+  {
+    title: "LMS Sytem",
+    description:
+      "LMS system is a MERN stack project of an online Course website with fully working backend, frontend, admin dashboard panel and payment system.",
+    tags: ["Next.js", "MongoDB", "Express", "Redis"],
+    imageUrl: movixProject,
+  },
+  {
+    title: "Youtube Full Stack",
+    description:
+      "A Youtube clone application with working professional backend. Frontend in Next.js.",
+    tags: ["Next.js", "Express", "Drizzle", "Tailwind", "PostgreSQL"],
+    imageUrl: youtubeProject,
   },
   {
     title: "Movix",
@@ -113,33 +127,23 @@ export const projectsData = [
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: movixProject,
   },
-  {
-    title: "Youtube Full Stack",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: youtubeProject,
-  },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "Sass (Scss)",
-  "Git",
   "JavaScript",
-  "TypeScript",
-  "React",
-  "Redux",
-  "Next.js",
   "Node.js",
+  "TypeScript",
   "Express",
-  "Tailwind",
-  "Sass",
+  "SQL",
   "Prisma",
+  "Drizzle",
   "MongoDB",
   "PostgreSQL",
+  "Next.js",
+  "Redux",
+  "Tailwind",
+  "React",
   "AWS",
+  "Redis",
   "Docker",
-  "Figma",
 ] as const;
