@@ -20,7 +20,7 @@
     "react-intersection-observer": "^9.5.3",
     "react-type-animation": "^3.2.0",
     "react-vertical-timeline-component": "^3.6.0",
-    "resend": "^2.0.0",
+    "resend": "^2.1.0-canary.1",
     "tailwind-merge": "^2.1.0",
     "typed.js": "^2.1.0"
   },
