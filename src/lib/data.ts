@@ -31,7 +31,7 @@ export const links = [
     name: "Contact",
     hash: "#contact",
   },
-] as const;
+];
 
 export const personalData = {
   name: {
@@ -62,14 +62,14 @@ export const personalData = {
       url: "https://www.linkedin.com/in/vc72/",
     },
   ],
-} as const;
+};
 
 export const dynamicStrings = [
   "am a passionate Web Developer",
   "craft enganging Web Experiences",
   "love to solve intricate coding problems",
   "am currently seeking fresh opportunities",
-] as const;
+];
 
 export const experiencesData = [
   {
@@ -96,7 +96,7 @@ export const experiencesData = [
     icon: React.createElement(FaReact),
     date: "2021 - present",
   },
-] as const; // title, location, description, icon, date
+]; // title, location, description, icon, date
 
 export const projectsData = [
   {
@@ -127,7 +127,7 @@ export const projectsData = [
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: movixProject,
   },
-] as const;
+];
 
 export const skillsData = [
   "JavaScript",
@@ -146,4 +146,4 @@ export const skillsData = [
   "AWS",
   "Redis",
   "Docker",
-] as const;
+];
