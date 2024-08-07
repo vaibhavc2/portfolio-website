@@ -23,12 +23,12 @@ export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
 
 export const useTypingEffect = (
   element: RefObject<HTMLElement>,
-  strings: string[],
+  strings: readonly string[],
   typeSpeed: number = 50
 ) => {
   useEffect(() => {
     const typed = new Typed(element.current, {
-      strings,
+      strings: strings as string[],
       typeSpeed,
     });
 

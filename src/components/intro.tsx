@@ -138,7 +138,7 @@ export default function Intro() {
           href={personalData.cvUrl}
           download
         >
-          Download CV{" "}
+          Download RESUME{" "}
           <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
         </a>
 
